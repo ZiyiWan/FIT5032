@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<script src="~/Scripts/test1.js" defer></script>
+<div id="test1">
+    This is a simple message
+</div>
+<div class="row">
+    <div class="col-md-5" id="sandbox-container"><input type="text" class="form-control"></div>
+</div>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+<link href="~/Content/bootstrap-datepicker.css" rel="stylesheet" />
+<script>
+    $('#sandbox-container input').datepicker({
+        defaultDate: new Date(),
+    });
+</script>
+@*<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("test1").innerHTML = "This is a replaced message";
+        })
+    </script>*@
